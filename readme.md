@@ -92,16 +92,14 @@ To run this project, you will **need to add/change** the following variables in 
 }
 ```
 
-* Status: 409 Conflict
-```json
-  {"message":"123test@gmail.com  already subscribed"}
-```
+
+
 ## Run in Docker
 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/swefd/gses2
 ```
 Go to the project directory
 
@@ -123,7 +121,7 @@ Run container
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/swefd/gses2
 ```
 
 Go to the project directory
