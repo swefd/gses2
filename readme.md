@@ -154,4 +154,13 @@ Start the server
   npm run start
 ```
 
+## DEMO
+### Email
+![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/email.png)
+### API getRate
+![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/getRate.png)
+### API subscribe
+![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/subscribe.png)
+### API sendEmails
+![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/sendEmails.png)
 
