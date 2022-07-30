@@ -4,7 +4,8 @@ const RateService = require("../services/rate.service");
 
 class SendEmailsController {
 
-    sendRateToAllSubscribers(req, res) {
+
+    async sendRateToAllSubscribers(req, res) {
         RateService.getRate()
             .then((rate) => {
                 const subscribedEmails = SendEmailsService.getSubscribersEmails()
@@ -17,7 +18,7 @@ class SendEmailsController {
                             subject: config.mailTrap.subject,
                             text: `Current BTC/UAH rate is ${rate} (Binance)`,
                         };
-                        SendEmailsService.fakeSend(mailOptions);
+                        SendEmailsService.sendFakeEmail(mailOptions);
                     } else {
                         SendEmailsService.sendRealEmail(emailAddress, rate);
                     }

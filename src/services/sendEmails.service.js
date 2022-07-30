@@ -29,7 +29,7 @@ class EmailsService {
             .split("\n");
     }
 
-    fakeSend(mailOptions) {
+    sendFakeEmail(mailOptions) {
         const transporter = this.getMailTransporter();
 
         transporter.sendMail(mailOptions, (error, _) => {

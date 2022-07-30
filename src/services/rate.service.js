@@ -5,7 +5,6 @@ class RateService {
 
     async getRate(coinPair = 'BTCUAH') {
         return await axios.get(`https://api.binance.com/api/v3/ticker/price?symbol=${coinPair}`).then(res => {
-            console.log(Math.round(res.data["price"]).toString())
             return Math.round(res.data["price"]).toString()
         })
     }
