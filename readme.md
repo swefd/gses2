@@ -104,6 +104,15 @@ To run this project, you will **need to add/change** the following variables in 
 }
 ```
 
+## DEMO
+### Email
+![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/email.png)
+### API getRate
+![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/getRate.png)
+### API subscribe
+![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/subscribe.png)
+### API sendEmails
+![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/sendEmails.png)
 
 
 ## Run in Docker
@@ -154,13 +163,5 @@ Start the server
   npm run start
 ```
 
-## DEMO
-### Email
-![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/email.png)
-### API getRate
-![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/getRate.png)
-### API subscribe
-![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/subscribe.png)
-### API sendEmails
-![EMAIL](https://raw.githubusercontent.com/swefd/gses2/master/demo/sendEmails.png)
+
 
