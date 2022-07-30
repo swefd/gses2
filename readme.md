@@ -46,7 +46,7 @@ To run this project, you will **need to add/change** the following variables in 
 ## API Reference
 
 
-* def port : 8080
+* Server port : 8080
 
 ### Get BTC/UAH rate
 
@@ -65,9 +65,11 @@ To run this project, you will **need to add/change** the following variables in 
   POST /api/subscribe/${email}
 ```
 
-| Parameter | Type     | Description        |
-|:----------|:---------|:-------------------|
-| `email`   | `string` | **Email address**. |
+| Parameter |   Type   |    Description     |
+|:---------:|:--------:|:------------------:|
+|  `email`  | `string` | **Email address**. |
+
+*form-data parameters
 
 ####  -> Responses
 
