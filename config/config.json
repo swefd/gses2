@@ -1,11 +1,11 @@
 {
     "app" : {
         "PORT" : "8080",
-        "fakeSMTP" : "True",
+        "fakeSMTP" : "false",
         "coinPair" : "BTCUAH"
     },
 
-    "mail" :{
+    "mailTrap":{
         "host" : "smtp.mailtrap.io",
         "port" : "2525",
         "user" : "7a37b2c854d917",
@@ -13,6 +13,15 @@
         "from" : "gses2btc.uah@mail.com",
         "subject" : "BTC Rate BTC/UAH" 
     },
+
+    "mail":{
+        "API_KEY" : "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",
+        "host" : "smtp-relay.sendinblue.com",
+        "port" : "587",
+        "from" : "gses2btc.uah@mail.com",
+        "subject" : "BTC Rate BTC/UAH"
+    },
+
 
     "sendinblue" : {
         "apiKey" : "asd"
