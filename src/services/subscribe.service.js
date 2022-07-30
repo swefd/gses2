@@ -3,15 +3,21 @@ const config = require("../../config/config.json");
 
 class SubscribeService {
     readEmailsFromFile(path, callback) {
+        // return fs.promises.readFile(process.cwd() + config.db.path,
+        //     {encoding: "utf8",}
+        // )
+
+        // for async/await
+        const strEmails = fs.readFileSync(process.cwd() + config.db.path, {encoding : "utf-8"})
+        return strEmails.split(/\r?\n/).filter(element => element);
+    }
+
+    validateEmail(path, callback) {
         return fs.promises.readFile(process.cwd() + config.db.path,
             {encoding: "utf8",}
         );
         // for async/await
         //return fs.readFileSync(process.cwd() + config.db.path, {encoding : "utf-8"});
-    }
-
-    validateEmail(email) {
-
     }
 
     addEmailToFile(email) {

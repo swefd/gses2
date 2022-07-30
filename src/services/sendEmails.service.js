@@ -24,8 +24,7 @@ class EmailsService {
    */
   getSubscribersEmails() {
     return fs
-      .readFileSync(process.cwd() + config.db.path, "utf-8")
-      .split("\n");
+      .readFileSync(process.cwd() + config.db.path, "utf-8").split("\n");
   }
 
 
