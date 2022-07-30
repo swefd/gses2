@@ -1,2 +1,1 @@
-test@mail.com
-test1@mail.com
+test@gmail.com

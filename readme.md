@@ -7,25 +7,35 @@ An API for sending an email to all subscribed users of the current exchange rate
 Uses the Binance API.
 ## Authors
 
-- [@Oleksandr Chornous](https://github.com/)
+- [@Oleksandr Chornous](https://github.com/swefd)
 
 
-## Config Variables
+## Config variables
 
 To run this project, you will **need to add/change** the following variables in `./config/config.json` file.
-####  App Variables:
+####  App variables:
 
 * `port` - Express server port
+* `fakeSMTP` - `true` for using [Fake SMTP Mailtrap](https://mailtrap.io/), `false` - for sending real emails with [Sendinblue](https://sendinblue.com) (Limit 300 emails per day)
 
 
-####  SMTP Variables:
+####  In case of usage [Fake SMTP Mailtrap](https://mailtrap.io/), change following Variables :
 * `host` - SMTP server address
 
 * `port` - SMTP server port
 
 * `user` - username
 
-* `pass` - password 
+* `pass` - password
+
+####  In case of usage [Sendinblue](https://sendinblue.com), change following Variables :
+* `API_KEY` - Paste here your own  api key :)
+
+* `host` - SMTP server address
+
+* `port` - SMTP server port
+
+* `from` - Sender email
 
 ####  DB Variables:
 
@@ -127,7 +137,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd gses2
 ```
 
 Install dependencies
