@@ -15,7 +15,7 @@
     },
 
     "mail":{
-        "API_KEY" : "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",
+        "API_KEY" : "CHANGE ME PLS :)",
         "host" : "smtp-relay.sendinblue.com",
         "port" : "587",
         "from" : "gses2btc.uah@mail.com",
