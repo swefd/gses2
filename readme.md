@@ -61,13 +61,13 @@ To run this project, you will **need to add/change** the following variables in 
 
 ####  -> Responses
 
+ * Status: 200 OK
 ```json
-Status: 200 OK
 {"message":"test@gmail.com successfully subscribed"}
 ```
 
+* Status: 409 Conflict
 ```json
-Status: 409 Conflict
 {"message":"test@gmail.com  already subscribed"}
 ```
 
@@ -80,23 +80,21 @@ Status: 409 Conflict
 
 #### -> Responses
 
+* Status: 200 OK
 ```json
-Status: 200 OK
-
 {
     "message": "Emails sent successfully",
     "emailAddress": [
         "test@gmail.com",
         "test1@gmail.com",
-        "test2@gmail.com",
+        "test2@gmail.com"
     ]
 }
 ```
+
+* Status: 409 Conflict
 ```json
-  Status: 409 Conflict
-
   {"message":"123test@gmail.com  already subscribed"}
-
 ```
 ## Run in Docker
 
