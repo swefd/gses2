@@ -4,7 +4,7 @@ const axios = require('axios')
 class RateService {
 
     async getRate(coinPair = 'BTCUAH') {
-        await axios.get(`https://api.binance.com/api/v3/ticker/price?symbol=${coinPair}`).then(res => {
+        return await axios.get(`https://api.binance.com/api/v3/ticker/price?symbol=${coinPair}`).then(res => {
             console.log(Math.round(res.data["price"]).toString())
             return Math.round(res.data["price"]).toString()
         })

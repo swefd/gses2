@@ -7,7 +7,7 @@ class SendEmailsController {
     RateService.getRate()
       .then((rate) => {
         const subscribedEmails = SendEmailsService.getSubscribersEmails()
-        subscribedEmails.forEach((emailAddress) => {
+        subscribedEmails.forEach(emailAddress => {
           let mailOptions = {
             from: config.mail.from,
             to: emailAddress,
