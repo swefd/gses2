@@ -1,28 +1,14 @@
-const https = require('https');
-const COIN_PAIR = require("../../config/config.json").app.coinPair
+//const COIN_PAIR = require("../../config/config.json").app.coinPair
+const axios = require('axios')
 
 class RateService {
-    getRate() {
-        return new Promise((resolve, reject) => {
-            https.get(`https://api.binance.com/api/v3/ticker/price?symbol=${COIN_PAIR}`, (binanceResponse) => {
-                    let data = "";
 
-                    binanceResponse.on("data", (chunk) => {
-                        data += chunk;
-                    });
-
-                    binanceResponse.on("end", () => {
-                        resolve(Math.round(JSON.parse(data)["price"]).toString());
-                    });
-                }
-            )
-                .on("error", (err) => {
-                    reject(err)
-                });
+    async getRate(coinPair = 'BTCUAH') {
+        await axios.get(`https://api.binance.com/api/v3/ticker/price?symbol=${coinPair}`).then(res => {
+            console.log(Math.round(res.data["price"]).toString())
+            return Math.round(res.data["price"]).toString()
         })
     }
-
-
 }
 
 module.exports = new RateService()

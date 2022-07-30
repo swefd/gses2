@@ -2,15 +2,13 @@ const RateService = require('../services/rate.service')
 
 class RateController {
 
-    getRate(req, res) {
-        RateService.getRate().then((result) => {
+    async getRate(req, res) {
+        await RateService.getRate().then(result => {
             res.send(result)
-        }).catch((err) => {
+        }).catch(err => {
             console.error(toString(err))
-            res.status(409)
-            res.send(err)
+            res.status(409).send(err)
         });
-
     }
 }
 
