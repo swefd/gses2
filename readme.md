@@ -40,7 +40,7 @@ To run this project, you will **need to add/change** the following variables in 
 
 ### Get BTC/UAH rate
 
-```http
+```
   GET /api/rate
 ```
 
@@ -51,7 +51,7 @@ To run this project, you will **need to add/change** the following variables in 
 
 ### Subscribe an email
 
-```http
+```
   POST /api/subscribe/${email}
 ```
 
@@ -73,7 +73,7 @@ To run this project, you will **need to add/change** the following variables in 
 
 
 ### Send email to all subscribers
-```http
+```
   POST /api/sendEmails
 ```
 * No parameters
