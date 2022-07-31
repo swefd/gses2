@@ -62,7 +62,7 @@ To run this project, you will **need to add/change** the following variables in 
 ### Subscribe an email
 
 ```
-  POST /api/subscribe/${email}
+  POST /api/subscribe
 ```
 
 | Parameter |   Type   |    Description     |
