@@ -1,9 +1,7 @@
-const express = require('express'),
-    router = express.Router(),
-    RateController = require('../controllers/rate.controller')
+const express = require("express");
+const router = express.Router();
+const RateController = require("../controllers/rate.controller");
 
-router
-    .route('/')
-    .get(RateController.getRate)
+router.route("/").get(RateController.getRate);
 
-module.exports = router
+module.exports = router;
